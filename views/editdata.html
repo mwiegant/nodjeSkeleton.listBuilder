@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Edit Data</title>
+    <link rel="stylesheet" type="text/css" href="../stylesheets/styles.css">
+</head>
+
+<body>
+<div id="projectHeader">
+    <h1>Edit Data</h1>
+    <hr>
+    <br> <br> <br>
+</div>
+
+<div id="projectData">
+    <input id="projectName" placeholder="Enter a name for this data" class="projectname"> <br> <br>
+    <input id="projectDescription" placeholder="Enter a description for this data" class="projectdescription"> <br> <br>
+
+    <table>
+        <thead id="tableHeading">
+        <th class="namecolumn"> <label>Item Name</label> </th>
+        <th class="listcolumn"> <label>Item Value</label> </th>
+        <th class="removecolumn"> <label>Remove</label> </th>
+        <th class="completecolumn"> <label>Exclude</label> </th>
+        </thead>
+
+        <tbody id="tableBody">
+
+        <!-- Rows of data to be inserted here-->
+
+        </tbody>
+
+        <tfoot id="tableFooting">
+        <td class="namecolumn"> <button class="add" onclick="addEntry()">Add Entry</button> </td>
+        <td class="listcolumn"></td>
+        <td class="removecolumn"></td>
+        <td class="completecolumn"></td>
+        </tfoot>
+
+    </table>
+</div>
+
+<div id="projectFooter">
+    <br> <br>
+    <h3> When you are ready to print your data in a more readable form, click below!</h3>
+    <button class="print" onclick="printTable()">Print Data</button>
+    <button class="print" onclick="submitData()">Submit Data</button>
+</div>
+
+</body>
+
+<script src="../lib/jquery-1.11.2.js"></script>
+<script src="../javascripts/editdata.js"></script>
+
+</html>
